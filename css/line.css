@@ -1,0 +1,209 @@
+body
+{
+    margin:0px;
+    padding:0px;
+    background: #f4f4f4;
+}
+
+.box
+{
+    width:98.9vw;
+    height:100vh;
+}
+
+.box .title
+{
+    width:100%;
+    height:5%;
+    background-color:#575e5f;
+    display:flex;
+}
+
+.box .title .not
+{
+    width:70%;
+    height:100%;
+}
+.box .title .text
+{
+    width:30%;
+    height:100%;
+    display:flex;
+}
+
+.box .title .test a
+{
+    color:white;
+    font-size:140%;
+    text-decoration:none;
+}
+
+.box .menu
+{
+    width:100%;
+    height:9%;
+    background-color:#aeb162;
+    display:flex;
+}
+.box .menu .not
+{
+    width:20%;
+    height:100%;
+}
+
+/*********************************************/
+
+.dropdown-menu ul
+{
+    list-style:none;
+    font-style:1rem;
+}
+
+.dropdown-menu
+{
+    padding-top:12px;
+    position: relative;
+    display: inline-block;
+    height:100%;
+    width:150px;
+    font-size:120%;
+    color:white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    line-height:45px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.dropdown
+{
+    margin: 0px;
+    position:absolute;
+    padding-left:0px;
+    width:150px;
+}
+
+.dropdown li
+{
+    display: none;
+    opacity:0;
+    color: black;
+    font-size:75%;
+    background-color:#f9f9e6;
+    transition: color .3s;
+}
+
+.dropdown li a
+{
+    text-decoration:none;
+    color: black;
+}
+
+.dropdown li:hover
+{
+    background-color: #aeb162;
+}
+
+.dropdown-menu:hover .dropdown li 
+{
+    display: block;
+    animation: animation .5s forwards;
+}
+
+@keyframes animation
+{
+    from
+    {
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.dropdown-menu .dropdown li:nth-last-child(1)
+{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.dropdown-menu:hover .dropdown li:nth-child(2)
+{
+    animation-delay: .2s;
+}
+
+.dropdown-menu:hover .dropdown li:nth-child(3)
+{
+    animation-delay: .4s;
+}
+
+.dropdown-menu:hover .dropdown li:nth-child(4)
+{
+    animation-delay: .6s;
+}
+
+.dropdown-menu:hover .dropdown li:nth-child(5)
+{
+    animation-delay: .8s;
+}
+
+/*********************************************/
+
+.box .message
+{
+    width:100%;
+    height:100%;
+    background:url('../img/background.jpg');
+    background-size:200vw 200vh;
+}
+
+.box .message .not
+{
+    width:100%;
+    height:1%;
+}
+
+.box .message .box1
+{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    height:90%;
+    background-color: white;
+}
+
+.box .message .box1 .box2
+{
+    width:100%;
+    height:8%;
+    margin-bottom:1%;
+}
+
+.box .message .box1 .box2 .text
+{
+    width:15%;
+    height:100%;
+    font-size:200%;
+    padding-left:5%;
+    border-bottom:solid #aeb162 3px;
+}
+
+.box .message .box1 .box3
+{
+    width:60%;
+    height:70%;
+    background-color: aqua;
+    margin-top:5%;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+.box .message .box1 .box3 img
+{
+    width:100%;
+    height:100%;
+}
+
