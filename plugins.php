@@ -134,7 +134,7 @@ function title2($input)
 }
 function conn()
 {
-	$a = mysqli_connect('localhost','vvrzmwkq_chyhhwe','_+AI4n{_Z&g!','vvrzmwkq_chyhhwen');
+	$a = mysqli_connect('localhost','root','','project');
 	if($a->connect_error)
 	{
 		die($a->connect_error);
